@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Coca-Cola - Información</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      padding-top: 60px;
+      background-image: url(C:/Users/tallerespa/Desktop/trabajo/cocacolafondo.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+    }
+    header {
+      background-color: #d32f2f;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    section {
+      margin-bottom: 40px;
+      background-color: rgba(255, 255, 255, 0.85); /* hace que el texto sea más legible */
+      padding: 20px;
+      border-radius: 10px;
+    }
+    h2 {
+      border-bottom: 2px solid #d32f2f;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+    footer {
+      background-color: #d32f2f;
+      color: white;
+      padding: 15px 0;
+      text-align: center;
+      margin-top: 60px;
+    }
+  </style>
+  
+</head>
+<body>
+
+<header>
+  <h1>Información de Coca-Cola</h1>
+</header>
+
+<div class="container">
+  <!-- Barra de navegación con pestañas -->
+  <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="vision-tab" data-bs-toggle="tab" data-bs-target="#vision-valores" type="button" role="tab" aria-controls="vision-valores" aria-selected="true">Visión y Valores</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="productos-tab" data-bs-toggle="tab" data-bs-target="#productos-precios" type="button" role="tab" aria-controls="productos-precios" aria-selected="false">Productos y Precios</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="sucursales-tab" data-bs-toggle="tab" data-bs-target="#sucursales" type="button" role="tab" aria-controls="sucursales" aria-selected="false">Sucursales</button>
+    </li>
+  </ul>
+
+  <div class="tab-content" id="myTabContent">
+    <!-- Visión y Valores -->
+    <div class="tab-pane fade show active" id="vision-valores" role="tabpanel" aria-labelledby="vision-tab">
+      <section>
+        <h2>Visión y Valores</h2>
+        <p><strong>Visión:</strong> Crear las marcas y opciones de bebidas que las personas aman, para refrescarlas en cuerpo y espíritu, haciendo un negocio sostenible y un futuro mejor para todos.</p>
+        <p><strong>Valores:</strong></p>
+        <ul>
+          <li>Actuar con integridad y ética.</li>
+          <li>Ser un líder en sostenibilidad.</li>
+          <li>Innovar y adaptarse a las necesidades del consumidor.</li>
+          <li>Compromiso con la comunidad y el bienestar global.</li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- Productos y Precios -->
+    <div class="tab-pane fade" id="productos-precios" role="tabpanel" aria-labelledby="productos-tab">
+      <section>
+        <h2>Productos y Precios</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100 shadow-sm">
+              <img src="C:/Users/tallerespa/Desktop/trabajo/cocacola350.jpg" class="card-img-top p-3" alt="Coca-Cola Lata 350 ml" style="height: 150px; object-fit: contain;">
+              <div class="card-body">
+                <h5 class="card-title">Coca-Cola Original - Lata 350 ml</h5>
+                <p class="card-text">Bebida gaseosa clásica en lata.</p>
+                <p><strong>Precio:</strong> Variable según punto de venta</p>
+              </div>
+              <div class="card-footer text-center">
+                <a href="https://www.cocacola.cl/productos" target="_blank" class="btn btn-danger btn-sm">Comprar</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 shadow-sm">
+              <img src="C:/Users/tallerespa/Desktop/trabajo/cocacola1.5.jpg" class="card-img-top p-3" alt="Coca-Cola Botella 1.5L" style="height: 150px; object-fit: contain;">
+              <div class="card-body">
+                <h5 class="card-title">Coca-Cola Original - Botella 1.5 L</h5>
+                <p class="card-text">Botella clásica para compartir.</p>
+                <p><strong>Precio:</strong> Variable según punto de venta</p>
+              </div>
+              <div class="card-footer text-center">
+                <a href="https://www.cocacola.cl/productos" target="_blank" class="btn btn-danger btn-sm">Comprar</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 shadow-sm">
+              <img src="C:/Users/tallerespa/Desktop/trabajo/cocacola3l.jpg" class="card-img-top p-3" alt="Coca-Cola Botella 2L" style="height: 150px; object-fit: contain;">
+              <div class="card-body">
+                <h5 class="card-title">Coca-Cola Original - Botella 3 L</h5>
+                <p class="card-text">Ideal para reuniones y celebraciones.</p>
+                <p><strong>Precio:</strong> Variable según punto de venta</p>
+              </div>
+              <div class="card-footer text-center">
+                <a href="https://www.cocacola.cl/productos" target="_blank" class="btn btn-danger btn-sm">Comprar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Sucursales -->
+    <div class="tab-pane fade" id="sucursales" role="tabpanel" aria-labelledby="sucursales-tab">
+      <section>
+        <h2>Sucursales y Oficinas en Chile</h2>
+        <div class="list-group">
+          <div class="list-group-item">
+            <h5>Coca-Cola Embonor S.A.</h5>
+            <p>Av. El Golf 40, Piso 4, Las Condes, Santiago.</p>
+            <p>Teléfono: +56 (2) 2299 1400</p>
+            <p>Email: <a href="mailto:contactochile@coca-cola.com">contactochile@coca-cola.com</a></p>
+            <p><a href="https://www.cocacola.cl" target="_blank">cocacola.cl</a></p>
+          </div>
+          <div class="list-group-item">
+            <h5>Coca-Cola Andina Chile</h5>
+            <p><em>Dirección no especificada.</em></p>
+            <p><a href="https://www.cocacola.cl" target="_blank">cocacola.cl</a></p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>© 2025 Coca-Cola Company | Información recopilada con fines informativos.</p>
+</footer>
+
+<!-- Bootstrap JS Bundle (Popper + Bootstrap JS) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
